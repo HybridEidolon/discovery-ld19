@@ -12,6 +12,7 @@ buildscript {
 }
 
 apply plugin: "kotlin"
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
@@ -20,6 +21,7 @@ repositories {
 group = "info.furyhunter"
 version = "0.2.0"
 description = "Ludum Dare 19, theme: Discovery"
+mainClassName = "ld19.DiscoveryGame"
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
