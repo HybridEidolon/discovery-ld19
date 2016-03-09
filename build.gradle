@@ -1,0 +1,29 @@
+buildscript {
+    ext.kotlin_version = '1.0.0'
+    ext.slick2d_version = '1.0.1'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: "kotlin"
+
+repositories {
+    mavenCentral()
+}
+
+group = "info.furyhunter"
+version = "0.2.0"
+description = "Ludum Dare 19, theme: Discovery"
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.slick2d:slick2d-core:$slick2d_version"
+    compile "org.lwjgl.lwjgl:lwjgl-platform:2.9.3"
+}
+
