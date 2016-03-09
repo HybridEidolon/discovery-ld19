@@ -49,9 +49,11 @@ class DiscoveryGame : StateBasedGame(Companion.gameName) {
         container.alwaysRender = true
         container.setVSync(true)
         container.soundVolume = 2f
-        container.setSmoothDeltas(true)
+        container.setSmoothDeltas(false)
         container.setClearEachFrame(true)
         container.setShowFPS(false)
+        container.setMaximumLogicUpdateInterval(33)
+        container.setMinimumLogicUpdateInterval(10)
         // Initialize the game data
         data = GameData()
         font = AngelCodeFont("font/font.fnt", "font/font_0.png")

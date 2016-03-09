@@ -28,4 +28,3 @@ dependencies {
     compile "org.slick2d:slick2d-core:$slick2d_version"
     compile "org.lwjgl.lwjgl:lwjgl-platform:2.9.3"
 }
-
