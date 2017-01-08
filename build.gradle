@@ -18,8 +18,16 @@ repositories {
     mavenCentral()
 }
 
+distributions {
+    main {
+        contents {
+            from { '.itch.toml' }
+        }
+    }
+}
+
 group = "com.idolagames"
-version = "1.0.0"
+version = "1.0.2"
 description = "Discovery.PHP"
 mainClassName = "ld19.DiscoveryGame"
 
