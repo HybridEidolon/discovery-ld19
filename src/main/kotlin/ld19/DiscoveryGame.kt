@@ -33,10 +33,7 @@ package ld19
 import ld19.state.PlayfieldState
 import ld19.state.TitleScreenState
 import ld19.state.YouWinstate
-import org.newdawn.slick.AngelCodeFont
-import org.newdawn.slick.AppGameContainer
-import org.newdawn.slick.GameContainer
-import org.newdawn.slick.SlickException
+import org.newdawn.slick.*
 import org.newdawn.slick.state.StateBasedGame
 
 class DiscoveryGame : StateBasedGame(Companion.gameName) {
@@ -56,7 +53,12 @@ class DiscoveryGame : StateBasedGame(Companion.gameName) {
         container.setMinimumLogicUpdateInterval(10)
         // Initialize the game data
         data = GameData()
-        font = AngelCodeFont("font/font.fnt", "font/font_0.png")
+        font = AngelCodeFont("font/font.fnt", "font/font_0.png", true)
+
+        // lol. hack.
+        val field = font!!.javaClass.getDeclaredField("fontImage")
+        field.isAccessible = true
+        (field.get(font) as Image).filter = Image.FILTER_NEAREST
 
         // Add gamestates
         addState(TitleScreenState())

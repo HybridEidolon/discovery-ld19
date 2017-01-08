@@ -1,6 +1,6 @@
 buildscript {
     ext.kotlin_version = '1.0.6'
-    ext.slick2d_version = '1.0.1'
+    ext.slick2d_version = '1.0.2'
 
     repositories {
         mavenCentral()

@@ -44,6 +44,7 @@ object Images {
             // load image
             try {
                 val put = Image("image/$name.png")
+                put.filter = Image.FILTER_NEAREST
                 images.put(name, put)
                 return put
             } catch (e: SlickException) {
