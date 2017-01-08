@@ -27,7 +27,7 @@ distributions {
 }
 
 group = "com.idolagames"
-version = "1.0.2"
+version = "1.0.3"
 description = "Discovery.PHP"
 mainClassName = "ld19.DiscoveryGame"
 
