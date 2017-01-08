@@ -1,5 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.0.0'
+    ext.kotlin_version = '1.0.6'
     ext.slick2d_version = '1.0.1'
 
     repositories {
@@ -18,9 +18,9 @@ repositories {
     mavenCentral()
 }
 
-group = "info.furyhunter"
-version = "0.2.0"
-description = "Ludum Dare 19, theme: Discovery"
+group = "com.idolagames"
+version = "1.0.0"
+description = "Discovery.PHP"
 mainClassName = "ld19.DiscoveryGame"
 
 dependencies {
