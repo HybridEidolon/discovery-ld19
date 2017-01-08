@@ -80,6 +80,7 @@ class PlayfieldState : BasicGameState() {
 
     @Throws(SlickException::class)
     override fun render(container: GameContainer, game: StateBasedGame, g: Graphics) {
+        g.scale(2f, 2f)
         val copyList = LinkedList(list)
         // Iterate through entities and draw them
         for (i in copyList.indices) {

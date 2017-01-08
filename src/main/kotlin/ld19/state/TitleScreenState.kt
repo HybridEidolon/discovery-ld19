@@ -62,6 +62,7 @@ class TitleScreenState : BasicGameState() {
 
     @Throws(SlickException::class)
     override fun render(container: GameContainer, game: StateBasedGame, g: Graphics) {
+        g.scale(2f, 2f)
         g.drawImage(Images.get("logo"), 0f, 0f)
         g.color = Color.white
         g.font = DiscoveryGame.font

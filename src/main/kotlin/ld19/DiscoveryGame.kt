@@ -80,7 +80,7 @@ class DiscoveryGame : StateBasedGame(Companion.gameName) {
             try {
                 NativesLoader.load()
                 val app = AppGameContainer(DiscoveryGame())
-                app.setDisplayMode(GAME_WIDTH, GAME_HEIGHT, false)
+                app.setDisplayMode(GAME_WIDTH * 2, GAME_HEIGHT * 2, false)
                 app.soundVolume = 2f
                 app.start()
             } catch (e: SlickException) {

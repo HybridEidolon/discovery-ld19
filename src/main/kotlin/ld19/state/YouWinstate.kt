@@ -57,6 +57,7 @@ class YouWinstate : BasicGameState() {
 
     @Throws(SlickException::class)
     override fun render(container: GameContainer, game: StateBasedGame, g: Graphics) {
+        g.scale(2f, 2f)
         g.font = DiscoveryGame.font
         g.color = Color.white
         g.drawString("You Win!", 100f, 100f)
